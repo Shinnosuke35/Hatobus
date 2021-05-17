@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9458AD026522B3C009FFECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9458ACF26522B3C009FFECE /* AppDelegate.swift */; };
+		A9458AD226522B3C009FFECE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9458AD126522B3C009FFECE /* SceneDelegate.swift */; };
+		A9458AD426522B3C009FFECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9458AD326522B3C009FFECE /* ViewController.swift */; };
+		A9458AD726522B3C009FFECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9458AD526522B3C009FFECE /* Main.storyboard */; };
+		A9458AD926522B3F009FFECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9458AD826522B3F009FFECE /* Assets.xcassets */; };
+		A9458ADC26522B3F009FFECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9458ADA26522B3F009FFECE /* LaunchScreen.storyboard */; };
+		A9458AE726522B3F009FFECE /* HatobusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9458AE626522B3F009FFECE /* HatobusTests.swift */; };
+		A9458AF226522B3F009FFECE /* HatobusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9458AF126522B3F009FFECE /* HatobusUITests.swift */; };
+		A9458B002652324D009FFECE /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9458AFF2652324D009FFECE /* TimeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9458AE326522B3F009FFECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9458AC426522B3C009FFECE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9458ACB26522B3C009FFECE;
+			remoteInfo = Hatobus;
+		};
+		A9458AEE26522B3F009FFECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9458AC426522B3C009FFECE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9458ACB26522B3C009FFECE;
+			remoteInfo = Hatobus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9458ACC26522B3C009FFECE /* Hatobus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hatobus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9458ACF26522B3C009FFECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9458AD126522B3C009FFECE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9458AD326522B3C009FFECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9458AD626522B3C009FFECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9458AD826522B3F009FFECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9458ADB26522B3F009FFECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9458ADD26522B3F009FFECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9458AE226522B3F009FFECE /* HatobusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatobusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9458AE626522B3F009FFECE /* HatobusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatobusTests.swift; sourceTree = "<group>"; };
+		A9458AE826522B3F009FFECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9458AED26522B3F009FFECE /* HatobusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatobusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9458AF126522B3F009FFECE /* HatobusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatobusUITests.swift; sourceTree = "<group>"; };
+		A9458AF326522B3F009FFECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9458AFF2652324D009FFECE /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9458AC926522B3C009FFECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9458ADF26522B3F009FFECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9458AEA26522B3F009FFECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9458AC326522B3C009FFECE = {
+			isa = PBXGroup;
+			children = (
+				A9458ACE26522B3C009FFECE /* Hatobus */,
+				A9458AE526522B3F009FFECE /* HatobusTests */,
+				A9458AF026522B3F009FFECE /* HatobusUITests */,
+				A9458ACD26522B3C009FFECE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9458ACD26522B3C009FFECE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9458ACC26522B3C009FFECE /* Hatobus.app */,
+				A9458AE226522B3F009FFECE /* HatobusTests.xctest */,
+				A9458AED26522B3F009FFECE /* HatobusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9458ACE26522B3C009FFECE /* Hatobus */ = {
+			isa = PBXGroup;
+			children = (
+				A9458ACF26522B3C009FFECE /* AppDelegate.swift */,
+				A9458AD126522B3C009FFECE /* SceneDelegate.swift */,
+				A9458AD326522B3C009FFECE /* ViewController.swift */,
+				A9458AD526522B3C009FFECE /* Main.storyboard */,
+				A9458AFF2652324D009FFECE /* TimeViewController.swift */,
+				A9458AD826522B3F009FFECE /* Assets.xcassets */,
+				A9458ADA26522B3F009FFECE /* LaunchScreen.storyboard */,
+				A9458ADD26522B3F009FFECE /* Info.plist */,
+			);
+			path = Hatobus;
+			sourceTree = "<group>";
+		};
+		A9458AE526522B3F009FFECE /* HatobusTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9458AE626522B3F009FFECE /* HatobusTests.swift */,
+				A9458AE826522B3F009FFECE /* Info.plist */,
+			);
+			path = HatobusTests;
+			sourceTree = "<group>";
+		};
+		A9458AF026522B3F009FFECE /* HatobusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9458AF126522B3F009FFECE /* HatobusUITests.swift */,
+				A9458AF326522B3F009FFECE /* Info.plist */,
+			);
+			path = HatobusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9458ACB26522B3C009FFECE /* Hatobus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9458AF626522B3F009FFECE /* Build configuration list for PBXNativeTarget "Hatobus" */;
+			buildPhases = (
+				A9458AC826522B3C009FFECE /* Sources */,
+				A9458AC926522B3C009FFECE /* Frameworks */,
+				A9458ACA26522B3C009FFECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hatobus;
+			productName = Hatobus;
+			productReference = A9458ACC26522B3C009FFECE /* Hatobus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9458AE126522B3F009FFECE /* HatobusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9458AF926522B3F009FFECE /* Build configuration list for PBXNativeTarget "HatobusTests" */;
+			buildPhases = (
+				A9458ADE26522B3F009FFECE /* Sources */,
+				A9458ADF26522B3F009FFECE /* Frameworks */,
+				A9458AE026522B3F009FFECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9458AE426522B3F009FFECE /* PBXTargetDependency */,
+			);
+			name = HatobusTests;
+			productName = HatobusTests;
+			productReference = A9458AE226522B3F009FFECE /* HatobusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9458AEC26522B3F009FFECE /* HatobusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9458AFC26522B3F009FFECE /* Build configuration list for PBXNativeTarget "HatobusUITests" */;
+			buildPhases = (
+				A9458AE926522B3F009FFECE /* Sources */,
+				A9458AEA26522B3F009FFECE /* Frameworks */,
+				A9458AEB26522B3F009FFECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9458AEF26522B3F009FFECE /* PBXTargetDependency */,
+			);
+			name = HatobusUITests;
+			productName = HatobusUITests;
+			productReference = A9458AED26522B3F009FFECE /* HatobusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9458AC426522B3C009FFECE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A9458ACB26522B3C009FFECE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					A9458AE126522B3F009FFECE = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = A9458ACB26522B3C009FFECE;
+					};
+					A9458AEC26522B3F009FFECE = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = A9458ACB26522B3C009FFECE;
+					};
+				};
+			};
+			buildConfigurationList = A9458AC726522B3C009FFECE /* Build configuration list for PBXProject "Hatobus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9458AC326522B3C009FFECE;
+			productRefGroup = A9458ACD26522B3C009FFECE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9458ACB26522B3C009FFECE /* Hatobus */,
+				A9458AE126522B3F009FFECE /* HatobusTests */,
+				A9458AEC26522B3F009FFECE /* HatobusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9458ACA26522B3C009FFECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9458ADC26522B3F009FFECE /* LaunchScreen.storyboard in Resources */,
+				A9458AD926522B3F009FFECE /* Assets.xcassets in Resources */,
+				A9458AD726522B3C009FFECE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9458AE026522B3F009FFECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9458AEB26522B3F009FFECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9458AC826522B3C009FFECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9458AD426522B3C009FFECE /* ViewController.swift in Sources */,
+				A9458B002652324D009FFECE /* TimeViewController.swift in Sources */,
+				A9458AD026522B3C009FFECE /* AppDelegate.swift in Sources */,
+				A9458AD226522B3C009FFECE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9458ADE26522B3F009FFECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9458AE726522B3F009FFECE /* HatobusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9458AE926522B3F009FFECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9458AF226522B3F009FFECE /* HatobusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9458AE426522B3F009FFECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9458ACB26522B3C009FFECE /* Hatobus */;
+			targetProxy = A9458AE326522B3F009FFECE /* PBXContainerItemProxy */;
+		};
+		A9458AEF26522B3F009FFECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9458ACB26522B3C009FFECE /* Hatobus */;
+			targetProxy = A9458AEE26522B3F009FFECE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9458AD526522B3C009FFECE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9458AD626522B3C009FFECE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9458ADA26522B3F009FFECE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9458ADB26522B3F009FFECE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9458AF426522B3F009FFECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9458AF526522B3F009FFECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9458AF726522B3F009FFECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Hatobus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = S.Hatobus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9458AF826522B3F009FFECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Hatobus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = S.Hatobus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9458AFA26522B3F009FFECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HatobusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = S.HatobusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hatobus.app/Hatobus";
+			};
+			name = Debug;
+		};
+		A9458AFB26522B3F009FFECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HatobusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = S.HatobusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hatobus.app/Hatobus";
+			};
+			name = Release;
+		};
+		A9458AFD26522B3F009FFECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HatobusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = S.HatobusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hatobus;
+			};
+			name = Debug;
+		};
+		A9458AFE26522B3F009FFECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HatobusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = S.HatobusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hatobus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9458AC726522B3C009FFECE /* Build configuration list for PBXProject "Hatobus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9458AF426522B3F009FFECE /* Debug */,
+				A9458AF526522B3F009FFECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9458AF626522B3F009FFECE /* Build configuration list for PBXNativeTarget "Hatobus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9458AF726522B3F009FFECE /* Debug */,
+				A9458AF826522B3F009FFECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9458AF926522B3F009FFECE /* Build configuration list for PBXNativeTarget "HatobusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9458AFA26522B3F009FFECE /* Debug */,
+				A9458AFB26522B3F009FFECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9458AFC26522B3F009FFECE /* Build configuration list for PBXNativeTarget "HatobusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9458AFD26522B3F009FFECE /* Debug */,
+				A9458AFE26522B3F009FFECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9458AC426522B3C009FFECE /* Project object */;
+}
