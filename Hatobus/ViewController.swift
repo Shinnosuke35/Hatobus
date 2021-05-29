@@ -54,7 +54,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
         
         //コーディング
         startTextField.placeholder = "出発地の選択"
-        finishTextField.placeholder = "終着地の選択"
+        finishTextField.placeholder = " 到着地の選択"
         timeTextField.placeholder = "日と時刻の選択"
         
         
