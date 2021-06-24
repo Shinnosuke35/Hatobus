@@ -28,8 +28,15 @@ class TimeViewController: UIViewController ,UITableViewDelegate ,UITableViewData
     var argString2 = ""
     var argString3 = ""
     
-    //配列の定義
+    //配列の定義var prefectures : [String] = []
     var prefectures : [String] = []
+    
+    //csvファイルを格納する配列
+    var csvArray = [String]()
+    //timeDataの1行ずつ格納する配列 var timeArray = [String]()
+    var timeArray = [String]()
+    //時間の行数のカウント変数を定義
+    var timeCount = 0
     
 
     override func viewDidLoad() {
@@ -38,20 +45,77 @@ class TimeViewController: UIViewController ,UITableViewDelegate ,UITableViewData
         
         switch argString {
         case "高坂":
-            if argString2 == "電機大学" {
-                if argString3 == "16:00" {
-                    prefectures = ["16:10発","16:18発","16:30発" ]
-                }
+            //csvのファイルを読み込む
+            csvArray = loadCSV(filename:"StartTakasaka")
+            //ループ文で一つずつ見ていく
+            while timeCount < 631 {
+                print(timeCount,timeArray.count,csvArray.count)
+                //csvArrayのtimeCount行目を,区切りで格納
+                timeArray = csvArray[timeCount].components(separatedBy:",")
+                //選択した時刻とcsvの時刻の一致した時の処理
+                if argString3  == timeArray[1]{
+                    prefectures = [timeArray[2],timeArray[3],timeArray[4]]
+                    break
+             }
+            timeCount += 1
             }
+            prefectures = ["該当する条件でのバスはありません" ]
+            timeCount = 0
+            break
+            
+        case "北坂戸":
+            //csvのファイルを読み込む
+            csvArray = loadCSV(filename:"StartKitasakado")
+            //csvArrayのtimeCount行目を,区切りで格納
+            timeArray = csvArray[timeCount+1].components(separatedBy:",")
+                //選択した時刻とcsvの時刻の一致した時の処理
+                if argString3  == timeArray[1]{
+                    prefectures = [timeArray[2],timeArray[3],timeArray[4]]
+                    break
+             }
+            
+        case "熊谷":
+            //csvのファイルを読み込む
+            csvArray = loadCSV(filename:"StartKumagaya")
+            //ループ文で一つずつ見ていく
+            while timeCount < 631 {
+                //csvArrayのtimeCount行目を,区切りで格納
+                timeArray = csvArray[timeCount].components(separatedBy:",")
+                //選択した時刻とcsvの時刻の一致した時の処理
+                if argString3  == timeArray[1]{
+                    prefectures = [timeArray[2],timeArray[3],timeArray[4]]
+                    break
+             }
+            timeCount += 1
+            }
+            prefectures = ["該当する条件でのバスはありません" ]
+            timeCount = 0
+            break
+            
         default:
             prefectures = ["該当する条件でのバスはありません" ]
         }
         
         // 背景色を設定
-        self.view.backgroundColor = UIColor(displayP3Red: 1.0,green: 1.0, blue: 0.90, alpha: 1.0)
+        self.view.backgroundColor = UIColor(displayP3Red: 0.90,green: 0.90, blue: 0.80, alpha: 1.0)
     }
     
 
+    //CSVファイルを読み取るObject
+    func loadCSV(filename: String) -> [String] {
+        guard let csvBundle = Bundle.main.path(forResource: filename, ofType: "csv") else{return csvArray}
+        do{
+            let csvData = try String(contentsOfFile: csvBundle, encoding: String.Encoding.utf8)
+            //\rで読み込み、\n行ごとに
+            let linechange = csvData.replacingOccurrences(of:"\r", with:"\n")
+            csvArray = linechange.components(separatedBy: "\n")
+            csvArray.removeLast()
+        }catch{
+            print("エラー")
+        }
+        return csvArray
+    }
+    
     /*
     // MARK: - Navigation
 

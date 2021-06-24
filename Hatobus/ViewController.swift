@@ -54,7 +54,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
         
         //コーディング
         startTextField.placeholder = "出発地の選択"
-        finishTextField.placeholder = " 到着地の選択"
+        finishTextField.placeholder = "到着地の選択"
         timeTextField.placeholder = "日と時刻の選択"
         
         
@@ -69,7 +69,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
         setupToolbar()
         
         // 背景色を設定
-        self.view.backgroundColor = UIColor(displayP3Red: 1.0,green: 1.0, blue: 0.90, alpha: 1.0)
+        self.view.backgroundColor = UIColor(displayP3Red: 0.90,green: 0.90, blue: 0.80, alpha: 1.0)
     }
 
 

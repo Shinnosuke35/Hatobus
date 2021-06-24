@@ -18,7 +18,7 @@ class QuizViewController: UIViewController {
     
     //csvファイルを格納する配列
     var csvArray: [String] = []
-    //quizDataの一問ずつ格納する配列
+    //quizDataの1行ずつ格納する配列
     var quizArray: [String] = []
     //quiz番号のカウント変数を定義
     var quizCount = 0
@@ -101,7 +101,7 @@ class QuizViewController: UIViewController {
         guard let csvBundle = Bundle.main.path(forResource: filename, ofType: "csv") else{return csvArray}
         do{
             let csvData = try String(contentsOfFile: csvBundle, encoding: String.Encoding.utf8)
-            //\rで書き込み、\n行ごとに
+            //\rで読み込み、\n行ごとに
             let linechange = csvData.replacingOccurrences(of: "\r", with: "\n")
             csvArray = linechange.components(separatedBy: "\n")
             csvArray.removeLast()
