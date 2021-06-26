@@ -22,9 +22,9 @@
 		A9458B08266221E9009FFECE /* Quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B07266221E9009FFECE /* Quiz.csv */; };
 		A9458B0C26623FC3009FFECE /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = A9458B0A26623FC3009FFECE /* correct.png */; };
 		A9458B0D26623FC3009FFECE /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = A9458B0B26623FC3009FFECE /* incorrect.png */; };
-		A9458B0F2664D558009FFECE /* StartTakasaka in Resources */ = {isa = PBXBuildFile; fileRef = A9458B0E2664D558009FFECE /* StartTakasaka */; };
-		A9458B112675FCC9009FFECE /* StartKitasakado in Resources */ = {isa = PBXBuildFile; fileRef = A9458B102675FCC9009FFECE /* StartKitasakado */; };
-		A9458B152675FEAA009FFECE /* StartKumagaya in Resources */ = {isa = PBXBuildFile; fileRef = A9458B142675FEAA009FFECE /* StartKumagaya */; };
+		A9458B0F2664D558009FFECE /* StartTakasaka.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B0E2664D558009FFECE /* StartTakasaka.csv */; };
+		A9458B112675FCC9009FFECE /* StartKitasakado.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B102675FCC9009FFECE /* StartKitasakado.csv */; };
+		A9458B152675FEAA009FFECE /* StartKumagaya.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B142675FEAA009FFECE /* StartKumagaya.csv */; };
 		A9458B17267726C1009FFECE /* TimeImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9458B16267726C1009FFECE /* TimeImageController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,9 +67,9 @@
 		A9458B07266221E9009FFECE /* Quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = Quiz.csv; sourceTree = "<group>"; };
 		A9458B0A26623FC3009FFECE /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
 		A9458B0B26623FC3009FFECE /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
-		A9458B0E2664D558009FFECE /* StartTakasaka */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartTakasaka; sourceTree = "<group>"; };
-		A9458B102675FCC9009FFECE /* StartKitasakado */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartKitasakado; sourceTree = "<group>"; };
-		A9458B142675FEAA009FFECE /* StartKumagaya */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartKumagaya; sourceTree = "<group>"; };
+		A9458B0E2664D558009FFECE /* StartTakasaka.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartTakasaka.csv; sourceTree = "<group>"; };
+		A9458B102675FCC9009FFECE /* StartKitasakado.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartKitasakado.csv; sourceTree = "<group>"; };
+		A9458B142675FEAA009FFECE /* StartKumagaya.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartKumagaya.csv; sourceTree = "<group>"; };
 		A9458B16267726C1009FFECE /* TimeImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeImageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,11 +130,11 @@
 				A9458B07266221E9009FFECE /* Quiz.csv */,
 				A9458B0526621D74009FFECE /* QuizScoreViewController.swift */,
 				A9458B0326621C83009FFECE /* QuizViewController.swift */,
-				A9458B0E2664D558009FFECE /* StartTakasaka */,
+				A9458B0E2664D558009FFECE /* StartTakasaka.csv */,
 				A9458B0926623FC3009FFECE /* image */,
 				A9458AFF2652324D009FFECE /* TimeViewController.swift */,
-				A9458B142675FEAA009FFECE /* StartKumagaya */,
-				A9458B102675FCC9009FFECE /* StartKitasakado */,
+				A9458B142675FEAA009FFECE /* StartKumagaya.csv */,
+				A9458B102675FCC9009FFECE /* StartKitasakado.csv */,
 				A9458AD826522B3F009FFECE /* Assets.xcassets */,
 				A9458ADA26522B3F009FFECE /* LaunchScreen.storyboard */,
 				A9458ADD26522B3F009FFECE /* Info.plist */,
@@ -272,12 +272,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9458B0F2664D558009FFECE /* StartTakasaka in Resources */,
-				A9458B112675FCC9009FFECE /* StartKitasakado in Resources */,
+				A9458B0F2664D558009FFECE /* StartTakasaka.csv in Resources */,
+				A9458B112675FCC9009FFECE /* StartKitasakado.csv in Resources */,
 				A9458B0C26623FC3009FFECE /* correct.png in Resources */,
 				A9458B0D26623FC3009FFECE /* incorrect.png in Resources */,
 				A9458ADC26522B3F009FFECE /* LaunchScreen.storyboard in Resources */,
-				A9458B152675FEAA009FFECE /* StartKumagaya in Resources */,
+				A9458B152675FEAA009FFECE /* StartKumagaya.csv in Resources */,
 				A9458AD926522B3F009FFECE /* Assets.xcassets in Resources */,
 				A9458AD726522B3C009FFECE /* Main.storyboard in Resources */,
 				A9458B08266221E9009FFECE /* Quiz.csv in Resources */,

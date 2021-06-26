@@ -47,50 +47,67 @@ class TimeViewController: UIViewController ,UITableViewDelegate ,UITableViewData
         case "高坂":
             //csvのファイルを読み込む
             csvArray = loadCSV(filename:"StartTakasaka")
+            
             //ループ文で一つずつ見ていく
             while timeCount < 631 {
                 print(timeCount,timeArray.count,csvArray.count)
                 //csvArrayのtimeCount行目を,区切りで格納
+               
                 timeArray = csvArray[timeCount].components(separatedBy:",")
                 //選択した時刻とcsvの時刻の一致した時の処理
-                if argString3  == timeArray[1]{
+                if argString3  == timeArray[1] {
                     prefectures = [timeArray[2],timeArray[3],timeArray[4]]
                     break
-             }
+                } else {
+                    prefectures = ["該当する条件でのバスはありません" ]
+                    //timeCount = 0
+                }
             timeCount += 1
             }
-            prefectures = ["該当する条件でのバスはありません" ]
-            timeCount = 0
-            break
+            //prefectures = ["該当する条件でのバスはありません" ]
+            //timeCount = 0
             
         case "北坂戸":
             //csvのファイルを読み込む
             csvArray = loadCSV(filename:"StartKitasakado")
-            //csvArrayのtimeCount行目を,区切りで格納
-            timeArray = csvArray[timeCount+1].components(separatedBy:",")
+            
+            //ループ文で一つずつ見ていく
+            while timeCount < 631 {
+                print(timeCount,timeArray.count,csvArray.count)
+                //csvArrayのtimeCount行目を,区切りで格納
+               
+                timeArray = csvArray[timeCount].components(separatedBy:",")
                 //選択した時刻とcsvの時刻の一致した時の処理
-                if argString3  == timeArray[1]{
+                if argString3  == timeArray[1] {
                     prefectures = [timeArray[2],timeArray[3],timeArray[4]]
                     break
-             }
+                } else {
+                    prefectures = ["該当する条件でのバスはありません" ]
+                    //timeCount = 0
+                }
+            timeCount += 1
+            }
             
         case "熊谷":
             //csvのファイルを読み込む
             csvArray = loadCSV(filename:"StartKumagaya")
+            
             //ループ文で一つずつ見ていく
             while timeCount < 631 {
+                print(timeCount,timeArray.count,csvArray.count)
                 //csvArrayのtimeCount行目を,区切りで格納
+               
                 timeArray = csvArray[timeCount].components(separatedBy:",")
                 //選択した時刻とcsvの時刻の一致した時の処理
-                if argString3  == timeArray[1]{
+                if argString3  == timeArray[1] {
                     prefectures = [timeArray[2],timeArray[3],timeArray[4]]
                     break
-             }
+                } else {
+                    prefectures = ["該当する条件でのバスはありません" ]
+                    //timeCount = 0
+                }
             timeCount += 1
             }
-            prefectures = ["該当する条件でのバスはありません" ]
-            timeCount = 0
-            break
             
         default:
             prefectures = ["該当する条件でのバスはありません" ]
