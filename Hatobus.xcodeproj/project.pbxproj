@@ -26,6 +26,15 @@
 		A9458B112675FCC9009FFECE /* StartKitasakado.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B102675FCC9009FFECE /* StartKitasakado.csv */; };
 		A9458B152675FEAA009FFECE /* StartKumagaya.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B142675FEAA009FFECE /* StartKumagaya.csv */; };
 		A9458B17267726C1009FFECE /* TimeImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9458B16267726C1009FFECE /* TimeImageController.swift */; };
+		A9458B19268880A8009FFECE /* KyugyoStartTakasaka.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B18268880A8009FFECE /* KyugyoStartTakasaka.csv */; };
+		A9458B1B268880D2009FFECE /* KyugyoStartKitasakado.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B1A268880D2009FFECE /* KyugyoStartKitasakado.csv */; };
+		A9458B1D26888106009FFECE /* KyugyoStartKumagaya.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B1C26888106009FFECE /* KyugyoStartKumagaya.csv */; };
+		A9458B1F26888394009FFECE /* KyugyoStartDenTaka.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B1E26888394009FFECE /* KyugyoStartDenTaka.csv */; };
+		A9458B21268883B9009FFECE /* KyugyoStartDenKita.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B20268883B9009FFECE /* KyugyoStartDenKita.csv */; };
+		A9458B23268883E7009FFECE /* KyugyoStartDenKuma.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B22268883E7009FFECE /* KyugyoStartDenKuma.csv */; };
+		A9458B2526889D22009FFECE /* StartDenTaka.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B2426889D22009FFECE /* StartDenTaka.csv */; };
+		A9458B2726889D69009FFECE /* StartDenKita.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B2626889D69009FFECE /* StartDenKita.csv */; };
+		A9458B2926889DDE009FFECE /* StartDenKuma.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B2826889DDE009FFECE /* StartDenKuma.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +80,15 @@
 		A9458B102675FCC9009FFECE /* StartKitasakado.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartKitasakado.csv; sourceTree = "<group>"; };
 		A9458B142675FEAA009FFECE /* StartKumagaya.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartKumagaya.csv; sourceTree = "<group>"; };
 		A9458B16267726C1009FFECE /* TimeImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeImageController.swift; sourceTree = "<group>"; };
+		A9458B18268880A8009FFECE /* KyugyoStartTakasaka.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KyugyoStartTakasaka.csv; sourceTree = "<group>"; };
+		A9458B1A268880D2009FFECE /* KyugyoStartKitasakado.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KyugyoStartKitasakado.csv; sourceTree = "<group>"; };
+		A9458B1C26888106009FFECE /* KyugyoStartKumagaya.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KyugyoStartKumagaya.csv; sourceTree = "<group>"; };
+		A9458B1E26888394009FFECE /* KyugyoStartDenTaka.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KyugyoStartDenTaka.csv; sourceTree = "<group>"; };
+		A9458B20268883B9009FFECE /* KyugyoStartDenKita.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KyugyoStartDenKita.csv; sourceTree = "<group>"; };
+		A9458B22268883E7009FFECE /* KyugyoStartDenKuma.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KyugyoStartDenKuma.csv; sourceTree = "<group>"; };
+		A9458B2426889D22009FFECE /* StartDenTaka.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartDenTaka.csv; sourceTree = "<group>"; };
+		A9458B2626889D69009FFECE /* StartDenKita.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartDenKita.csv; sourceTree = "<group>"; };
+		A9458B2826889DDE009FFECE /* StartDenKuma.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartDenKuma.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +151,15 @@
 				A9458B0E2664D558009FFECE /* StartTakasaka.csv */,
 				A9458B0926623FC3009FFECE /* image */,
 				A9458AFF2652324D009FFECE /* TimeViewController.swift */,
+				A9458B2426889D22009FFECE /* StartDenTaka.csv */,
+				A9458B2626889D69009FFECE /* StartDenKita.csv */,
+				A9458B2826889DDE009FFECE /* StartDenKuma.csv */,
+				A9458B1E26888394009FFECE /* KyugyoStartDenTaka.csv */,
+				A9458B20268883B9009FFECE /* KyugyoStartDenKita.csv */,
+				A9458B22268883E7009FFECE /* KyugyoStartDenKuma.csv */,
+				A9458B18268880A8009FFECE /* KyugyoStartTakasaka.csv */,
+				A9458B1A268880D2009FFECE /* KyugyoStartKitasakado.csv */,
+				A9458B1C26888106009FFECE /* KyugyoStartKumagaya.csv */,
 				A9458B142675FEAA009FFECE /* StartKumagaya.csv */,
 				A9458B102675FCC9009FFECE /* StartKitasakado.csv */,
 				A9458AD826522B3F009FFECE /* Assets.xcassets */,
@@ -272,14 +299,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9458B2526889D22009FFECE /* StartDenTaka.csv in Resources */,
 				A9458B0F2664D558009FFECE /* StartTakasaka.csv in Resources */,
 				A9458B112675FCC9009FFECE /* StartKitasakado.csv in Resources */,
+				A9458B2926889DDE009FFECE /* StartDenKuma.csv in Resources */,
 				A9458B0C26623FC3009FFECE /* correct.png in Resources */,
+				A9458B2726889D69009FFECE /* StartDenKita.csv in Resources */,
 				A9458B0D26623FC3009FFECE /* incorrect.png in Resources */,
+				A9458B1B268880D2009FFECE /* KyugyoStartKitasakado.csv in Resources */,
 				A9458ADC26522B3F009FFECE /* LaunchScreen.storyboard in Resources */,
 				A9458B152675FEAA009FFECE /* StartKumagaya.csv in Resources */,
+				A9458B1F26888394009FFECE /* KyugyoStartDenTaka.csv in Resources */,
+				A9458B1D26888106009FFECE /* KyugyoStartKumagaya.csv in Resources */,
 				A9458AD926522B3F009FFECE /* Assets.xcassets in Resources */,
+				A9458B21268883B9009FFECE /* KyugyoStartDenKita.csv in Resources */,
 				A9458AD726522B3C009FFECE /* Main.storyboard in Resources */,
+				A9458B19268880A8009FFECE /* KyugyoStartTakasaka.csv in Resources */,
+				A9458B23268883E7009FFECE /* KyugyoStartDenKuma.csv in Resources */,
 				A9458B08266221E9009FFECE /* Quiz.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

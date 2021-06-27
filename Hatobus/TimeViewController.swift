@@ -27,6 +27,7 @@ class TimeViewController: UIViewController ,UITableViewDelegate ,UITableViewData
     var argString = ""
     var argString2 = ""
     var argString3 = ""
+    var argString4 = ""
     
     //配列の定義var prefectures : [String] = []
     var prefectures : [String] = []
@@ -49,14 +50,13 @@ class TimeViewController: UIViewController ,UITableViewDelegate ,UITableViewData
             csvArray = loadCSV(filename:"StartTakasaka")
             
             //ループ文で一つずつ見ていく
-            while timeCount < 631 {
+            while timeCount < 1441 {
                 print(timeCount,timeArray.count,csvArray.count)
                 //csvArrayのtimeCount行目を,区切りで格納
-               
                 timeArray = csvArray[timeCount].components(separatedBy:",")
                 //選択した時刻とcsvの時刻の一致した時の処理
-                if argString3  == timeArray[1] {
-                    prefectures = [timeArray[2],timeArray[3],timeArray[4]]
+                if argString3  == timeArray[0] {
+                    prefectures = [timeArray[1],timeArray[2],timeArray[3]]
                     break
                 } else {
                     prefectures = ["該当する条件でのバスはありません" ]
@@ -64,6 +64,7 @@ class TimeViewController: UIViewController ,UITableViewDelegate ,UITableViewData
                 }
             timeCount += 1
             }
+            break
             //prefectures = ["該当する条件でのバスはありません" ]
             //timeCount = 0
             
@@ -72,14 +73,13 @@ class TimeViewController: UIViewController ,UITableViewDelegate ,UITableViewData
             csvArray = loadCSV(filename:"StartKitasakado")
             
             //ループ文で一つずつ見ていく
-            while timeCount < 631 {
+            while timeCount < 1441 {
                 print(timeCount,timeArray.count,csvArray.count)
                 //csvArrayのtimeCount行目を,区切りで格納
-               
                 timeArray = csvArray[timeCount].components(separatedBy:",")
                 //選択した時刻とcsvの時刻の一致した時の処理
-                if argString3  == timeArray[1] {
-                    prefectures = [timeArray[2],timeArray[3],timeArray[4]]
+                if argString3  == timeArray[0] {
+                    prefectures = [timeArray[1],timeArray[2],timeArray[3]]
                     break
                 } else {
                     prefectures = ["該当する条件でのバスはありません" ]
@@ -87,20 +87,20 @@ class TimeViewController: UIViewController ,UITableViewDelegate ,UITableViewData
                 }
             timeCount += 1
             }
+            break
             
         case "熊谷":
             //csvのファイルを読み込む
             csvArray = loadCSV(filename:"StartKumagaya")
             
             //ループ文で一つずつ見ていく
-            while timeCount < 631 {
+            while timeCount < 1441 {
                 print(timeCount,timeArray.count,csvArray.count)
                 //csvArrayのtimeCount行目を,区切りで格納
-               
                 timeArray = csvArray[timeCount].components(separatedBy:",")
                 //選択した時刻とcsvの時刻の一致した時の処理
-                if argString3  == timeArray[1] {
-                    prefectures = [timeArray[2],timeArray[3],timeArray[4]]
+                if argString3  == timeArray[0] {
+                    prefectures = [timeArray[1],timeArray[2],timeArray[3]]
                     break
                 } else {
                     prefectures = ["該当する条件でのバスはありません" ]
@@ -108,6 +108,74 @@ class TimeViewController: UIViewController ,UITableViewDelegate ,UITableViewData
                 }
             timeCount += 1
             }
+            break
+        
+        case "電機大学":
+            if argString2 == "高坂" {
+                
+                //csvのファイルを読み込む
+                csvArray = loadCSV(filename:"StartDenTaka")
+                //ループ文で一つずつ見ていく
+                while timeCount < 1441 {
+                    print(timeCount,timeArray.count,csvArray.count)
+                    //csvArrayのtimeCount行目を,区切りで格納
+                    timeArray = csvArray[timeCount].components(separatedBy:",")
+                    //選択した時刻とcsvの時刻の一致した時の処理
+                    if argString3  == timeArray[0] {
+                        prefectures = [timeArray[1],timeArray[2],timeArray[3]]
+                        break
+                    } else {
+                        prefectures = ["該当する条件でのバスはありません" ]
+                        //timeCount = 0
+                    }
+                timeCount += 1
+                }
+                break
+            } else if argString2 == "北坂戸" {
+                
+                //csvのファイルを読み込む
+                csvArray = loadCSV(filename:"StartDenKita")
+                //ループ文で一つずつ見ていく
+                while timeCount < 1441 {
+                    print(timeCount,timeArray.count,csvArray.count)
+                    //csvArrayのtimeCount行目を,区切りで格納
+                    timeArray = csvArray[timeCount].components(separatedBy:",")
+                    //選択した時刻とcsvの時刻の一致した時の処理
+                    if argString3  == timeArray[0] {
+                        prefectures = [timeArray[1],timeArray[2],timeArray[3]]
+                        break
+                    } else {
+                        prefectures = ["該当する条件でのバスはありません" ]
+                        //timeCount = 0
+                    }
+                timeCount += 1
+                }
+                break
+            } else if argString2 == "熊谷" {
+                
+                //csvのファイルを読み込む
+                csvArray = loadCSV(filename:"StartDenKuma")
+                //ループ文で一つずつ見ていく
+                while timeCount < 1441 {
+                    print(timeCount,timeArray.count,csvArray.count)
+                    //csvArrayのtimeCount行目を,区切りで格納
+                    timeArray = csvArray[timeCount].components(separatedBy:",")
+                    //選択した時刻とcsvの時刻の一致した時の処理
+                    if argString3  == timeArray[0] {
+                        prefectures = [timeArray[1],timeArray[2],timeArray[3]]
+                        break
+                    } else {
+                        prefectures = ["該当する条件でのバスはありません" ]
+                        //timeCount = 0
+                    }
+                timeCount += 1
+                }
+                break
+            } else {
+                prefectures = ["指定した条件が不適切です。" ]
+                break
+            }
+            
             
         default:
             prefectures = ["該当する条件でのバスはありません" ]

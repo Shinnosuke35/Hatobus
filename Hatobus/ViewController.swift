@@ -19,18 +19,22 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
     
     //titleForRowはpickerViewに設定するデータを登録するためのメソッド
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView == upperPickerView{
+        if (pickerView == upperPickerView) {
             return data[row]
-        }else{
+        } else if (pickerView == lowerPickerView){
             return data[row]
+        } else {
+            return data2[row]
         }
     }
     //didSelectRow は pickerView の各種データを選択したときに呼ばれるメソッド
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView == upperPickerView{
+        if (pickerView == upperPickerView) {
             startTextField.text = data[row]
-        }else{
+        } else if (pickerView == lowerPickerView) {
             finishTextField.text = data[row]
+        } else {
+            sceduleTextField.text = data2[row]
         }
     }
 
@@ -38,6 +42,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
     @IBOutlet weak var startTextField: UITextField!
     @IBOutlet weak var finishTextField: UITextField!
     @IBOutlet weak var timeTextField: UITextField!
+    @IBOutlet weak var sceduleTextField: UITextField!
     @IBAction func serchButton(_ sender: Any) {
     }
     
@@ -47,6 +52,8 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
     var upperPickerView = UIPickerView()
     var lowerPickerView = UIPickerView()
        let data = ["---", "電機大学", "高坂", "北坂戸", "熊谷"]
+    var scedulePickerView = UIPickerView()
+       let data2 = ["___", "授業期間中", "土曜日", "休業期間中", "___"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +63,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
         startTextField.placeholder = "出発地の選択"
         finishTextField.placeholder = "到着地の選択"
         timeTextField.placeholder = "日と時刻の選択"
-        
+        sceduleTextField.placeholder = "日程の選択"
         
         upperPickerView.dataSource = self
         lowerPickerView.dataSource = self
@@ -94,16 +101,30 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
         let lowerDoneButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(ViewController.donePickerS))
         lowerToolbar.setItems([lowerDoneButtonItem], animated: true)
         finishTextField.inputAccessoryView = lowerToolbar
+        
+        //scedulePickerView
+        scedulePickerView.delegate = self
+        sceduleTextField.inputView = scedulePickerView
+        // toolbar
+        let sceduleToolbar = UIToolbar()
+        sceduleToolbar.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44)
+        let sceduleDoneButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(ViewController.donePickerS))
+        sceduleToolbar.setItems([sceduleDoneButtonItem], animated: true)
+        sceduleTextField.inputAccessoryView = sceduleToolbar
+        
         }
+    
     
     @objc func donePickerS() {
         startTextField.endEditing(true)
         finishTextField.endEditing(true)
+        sceduleTextField.endEditing(true)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         startTextField.endEditing(true)
         finishTextField.endEditing(true)
+        sceduleTextField.endEditing(true)
         }
     
     
@@ -151,6 +172,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
             nextView.argString = startTextField.text!
             nextView.argString2 = finishTextField.text!
             nextView.argString3 = timeTextField.text!
+            nextView.argString4 = sceduleTextField.text!
         }
     }
     
