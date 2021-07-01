@@ -35,6 +35,12 @@
 		A9458B2526889D22009FFECE /* StartDenTaka.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B2426889D22009FFECE /* StartDenTaka.csv */; };
 		A9458B2726889D69009FFECE /* StartDenKita.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B2626889D69009FFECE /* StartDenKita.csv */; };
 		A9458B2926889DDE009FFECE /* StartDenKuma.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B2826889DDE009FFECE /* StartDenKuma.csv */; };
+		A9458B2B268D6401009FFECE /* DoyoStartTakasaka.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B2A268D6401009FFECE /* DoyoStartTakasaka.csv */; };
+		A9458B2D268D642B009FFECE /* DoyoStartKitasakado.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B2C268D642B009FFECE /* DoyoStartKitasakado.csv */; };
+		A9458B2F268D6454009FFECE /* DoyoStartKumagaya.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B2E268D6454009FFECE /* DoyoStartKumagaya.csv */; };
+		A9458B31268D647C009FFECE /* DoyoStartDenTaka.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B30268D647C009FFECE /* DoyoStartDenTaka.csv */; };
+		A9458B33268D64B2009FFECE /* DoyoStartDenKita.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B32268D64B2009FFECE /* DoyoStartDenKita.csv */; };
+		A9458B35268D64D6009FFECE /* DoyoStartDenKuma.csv in Resources */ = {isa = PBXBuildFile; fileRef = A9458B34268D64D6009FFECE /* DoyoStartDenKuma.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,12 @@
 		A9458B2426889D22009FFECE /* StartDenTaka.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartDenTaka.csv; sourceTree = "<group>"; };
 		A9458B2626889D69009FFECE /* StartDenKita.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartDenKita.csv; sourceTree = "<group>"; };
 		A9458B2826889DDE009FFECE /* StartDenKuma.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartDenKuma.csv; sourceTree = "<group>"; };
+		A9458B2A268D6401009FFECE /* DoyoStartTakasaka.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = DoyoStartTakasaka.csv; sourceTree = "<group>"; };
+		A9458B2C268D642B009FFECE /* DoyoStartKitasakado.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = DoyoStartKitasakado.csv; sourceTree = "<group>"; };
+		A9458B2E268D6454009FFECE /* DoyoStartKumagaya.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = DoyoStartKumagaya.csv; sourceTree = "<group>"; };
+		A9458B30268D647C009FFECE /* DoyoStartDenTaka.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = DoyoStartDenTaka.csv; sourceTree = "<group>"; };
+		A9458B32268D64B2009FFECE /* DoyoStartDenKita.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = DoyoStartDenKita.csv; sourceTree = "<group>"; };
+		A9458B34268D64D6009FFECE /* DoyoStartDenKuma.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = DoyoStartDenKuma.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +163,12 @@
 				A9458B0E2664D558009FFECE /* StartTakasaka.csv */,
 				A9458B0926623FC3009FFECE /* image */,
 				A9458AFF2652324D009FFECE /* TimeViewController.swift */,
+				A9458B2A268D6401009FFECE /* DoyoStartTakasaka.csv */,
+				A9458B2C268D642B009FFECE /* DoyoStartKitasakado.csv */,
+				A9458B2E268D6454009FFECE /* DoyoStartKumagaya.csv */,
+				A9458B30268D647C009FFECE /* DoyoStartDenTaka.csv */,
+				A9458B32268D64B2009FFECE /* DoyoStartDenKita.csv */,
+				A9458B34268D64D6009FFECE /* DoyoStartDenKuma.csv */,
 				A9458B2426889D22009FFECE /* StartDenTaka.csv */,
 				A9458B2626889D69009FFECE /* StartDenKita.csv */,
 				A9458B2826889DDE009FFECE /* StartDenKuma.csv */,
@@ -299,9 +317,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9458B2B268D6401009FFECE /* DoyoStartTakasaka.csv in Resources */,
 				A9458B2526889D22009FFECE /* StartDenTaka.csv in Resources */,
+				A9458B2D268D642B009FFECE /* DoyoStartKitasakado.csv in Resources */,
+				A9458B33268D64B2009FFECE /* DoyoStartDenKita.csv in Resources */,
+				A9458B35268D64D6009FFECE /* DoyoStartDenKuma.csv in Resources */,
 				A9458B0F2664D558009FFECE /* StartTakasaka.csv in Resources */,
 				A9458B112675FCC9009FFECE /* StartKitasakado.csv in Resources */,
+				A9458B31268D647C009FFECE /* DoyoStartDenTaka.csv in Resources */,
 				A9458B2926889DDE009FFECE /* StartDenKuma.csv in Resources */,
 				A9458B0C26623FC3009FFECE /* correct.png in Resources */,
 				A9458B2726889D69009FFECE /* StartDenKita.csv in Resources */,
@@ -312,6 +335,7 @@
 				A9458B1F26888394009FFECE /* KyugyoStartDenTaka.csv in Resources */,
 				A9458B1D26888106009FFECE /* KyugyoStartKumagaya.csv in Resources */,
 				A9458AD926522B3F009FFECE /* Assets.xcassets in Resources */,
+				A9458B2F268D6454009FFECE /* DoyoStartKumagaya.csv in Resources */,
 				A9458B21268883B9009FFECE /* KyugyoStartDenKita.csv in Resources */,
 				A9458AD726522B3C009FFECE /* Main.storyboard in Resources */,
 				A9458B19268880A8009FFECE /* KyugyoStartTakasaka.csv in Resources */,

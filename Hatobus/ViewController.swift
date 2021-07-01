@@ -63,7 +63,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSou
         startTextField.placeholder = "出発地の選択"
         finishTextField.placeholder = "到着地の選択"
         timeTextField.placeholder = "日と時刻の選択"
-        sceduleTextField.placeholder = "日程の選択"
+        sceduleTextField.placeholder = "土曜日&休業期間中ならば選択"
         
         upperPickerView.dataSource = self
         lowerPickerView.dataSource = self
